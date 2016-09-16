@@ -1,7 +1,7 @@
 <textarea id="source">
 {{ range .Data.Pages.ByTitle }}
 class: center, middle
-{{ .Content}}
+{{ .RawContent}}
 ---
 {{ end }}
 </textarea>
