@@ -4,12 +4,18 @@
 
 body { font-family: 'Droid Serif'; }
 h1, h2, h3 {
-	font-family: 'Yanone Kaffeesatz';
-	font-weight: normal;
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: normal;
 }
 .remark-code, .remark-inline-code {
-	font-family: 'Ubuntu Mono';
+    font-family: 'Ubuntu Mono';
 }
 .remark-slide-content h1{
-	font-size: 80px;
+    font-size: 80px;
+}
+.dark-bg{
+    background: salmon;
+}
+.remark-slide-content{
+    /* background-image: ; */
 }
