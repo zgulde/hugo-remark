@@ -1,21 +1,132 @@
-@import url(//fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-@import url(//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-@import url(//fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+/*********************************** Fonts ***********************************/
 
-body { font-family: 'Droid Serif'; }
+@import url(//fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+@import url(//fonts.googleapis.com/css?family=Slabo+27px);
+@import url(//fonts.googleapis.com/css?family=PT+Serif);
+
+body { font-family: 'PT Serif'; }
+
 h1, h2, h3 {
-    font-family: 'Yanone Kaffeesatz';
+    font-family: 'Slabo 27px';
     font-weight: normal;
 }
 .remark-code, .remark-inline-code {
     font-family: 'Ubuntu Mono';
 }
+
 .remark-slide-content h1{
     font-size: 80px;
 }
-.dark-bg{
-    background: salmon;
+
+/*************************** Miscellaneous Styles ***************************/
+h2 {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
 }
-.remark-slide-content{
-    /* background-image: ; */
+
+img {
+    max-width: 100%;
 }
+
+blockquote p {
+    color: #666;
+    font-style: italic;
+}
+
+pre, p, ul {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+li > ul {
+    margin: 0;
+}
+
+/* striped tables */
+tbody tr:nth-child(odd) {
+    background-color: #ddd;
+}
+
+/* Make the inline code stand out a little more */
+.remark-inline-code {
+    padding: 0.1em;
+    border: 1px solid #EEE;
+}
+
+/******************************** Grid Layout ********************************/
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    box-sizing: border-box;
+    float: left;
+    padding: 0 0.5em;
+}
+
+.col-1  { width: 8.3333%; }
+.col-2  { width: 16.6666%; }
+.col-3  { width: 25%; }
+.col-4  { width: 33.3333%; }
+.col-5  { width: 41.6666%; }
+.col-6  { width: 50%; }
+.col-7  { width: 58.3333%; }
+.col-8  { width: 66.6666%; }
+.col-9  { width: 75%; }
+.col-10 { width: 83.3333%; }
+.col-11 { width: 91.6666%; }
+.col-12 { width: 100%; }
+
+.offset-1  { margin-left: 8.3333%; }
+.offset-2  { margin-left: 16.6666%; }
+.offset-3  { margin-left: 25%; }
+.offset-4  { margin-left: 33.3333%; }
+.offset-5  { margin-left: 41.6666%; }
+.offset-6  { margin-left: 50%; }
+.offset-7  { margin-left: 58.3333%; }
+.offset-8  { margin-left: 66.6666%; }
+.offset-9  { margin-left: 75%; }
+.offset-10 { margin-left: 83.3333%; }
+.offset-11 { margin-left: 91.6666%; }
+.offset-12 { margin-left: 100%; }
+
+/****************************** Utility Classes ******************************/
+.text-center,
+.text-left,
+.text-right,
+.clear { display: block; }
+
+.double-space { line-height: 1.3em; }
+
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+.clear { clear: both; }
+.center-table > table { margin: auto; }
+
+.light-text { color: #555; }
+.smaller { font-size: 0.9em; }
+.small { font-size: 0.75em; }
+
+.border-right { border-right: 1px solid #BBB; }
+.border-left { border-left: 1px solid #BBB; }
+.border-top { border-top: 1px solid #BBB; }
+.border-bottom { border-bottom: 1px solid #BBB; }
+
+.margin-top-1 { margin-top: 1em; }
+.margin-top-15 { margin-top: 1.5em; }
+.margin-top-2 { margin-top: 2em; }
+
+.margin-bottom-1 { margin-bottom: 1em; }
+.margin-bottom-15 { margin-bottom: 1.5em; }
+.margin-bottom-2 { margin-bottom: 2em; }
+
+.pull-right { float: right !important; }
+.pull-left { float: left !important; }
